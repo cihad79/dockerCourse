@@ -8,6 +8,8 @@ WORKDIR /app
 
 COPY package*.json ./
 
+USER root
+
 RUN chown -R app:app /app
 
 USER app 
